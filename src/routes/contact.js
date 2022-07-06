@@ -1,9 +1,11 @@
-import React from 'react'
+import React, { useRef } from 'react'
 import LinkedInIcon from '@material-ui/icons/LinkedIn';
 import GitHubIcon from '@material-ui/icons/GitHub';
 import MailIcon from '@material-ui/icons/Mail';
+import emailjs from '@emailjs/browser';
 
 function Contact() {
+  const form = useRef();
   return (
     <section className='contact_component container' id='home'>
       {/* com for component */}
@@ -18,11 +20,19 @@ function Contact() {
           </div>
         </div>
         <div className='contact__forms'>
-          <form>
-            <input type={'text'} placeholder='Your-Name' required />
-            <input type={'email'} placeholder='Your-Email' required />
-            <textarea placeholder='Your-Message' />
-            <button type="submit">Send</button>
+          <form ref={form}>
+            <input type={'text'} placeholder='Your-Name' name={'from_name'} required />
+            <input type={'email'} placeholder='Your-Email' name={'from_email'} required />
+            <textarea placeholder='Your-Message' name='message'></textarea>
+            <button type="submit" onClick={(e) => {
+              e.preventDefault();
+              emailjs.sendForm('service_l50fkhm', 'template_sjns88d', form.current, 'cp5NWKgyk7fyHhUO_')
+                .then((result) => {
+                  alert('Email Sent Thanks...Contact Us Again.');
+                }, (error) => {
+                  alert(error.text);
+                });
+            }}>Send</button>
           </form>
         </div>
       </div>
