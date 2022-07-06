@@ -40,8 +40,10 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  }, "engines" : { 
-    "npm" : "8.4.1",
-    "node" : "17.5.0"
-  }
+  }, "engines" : {
+    "name": "example-app",
+    "description": "a really cool app",
+    "version": "1.0.0",
+      "node": "17.5.0"
+    }
 }
