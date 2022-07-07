@@ -26,12 +26,17 @@ function Contact() {
             <textarea placeholder='Your-Message' name='message'></textarea>
             <button type="submit" onClick={(e) => {
               e.preventDefault();
-              emailjs.sendForm('service_l50fkhm', 'template_sjns88d', form.current, 'cp5NWKgyk7fyHhUO_')
-                .then((result) => {
-                  alert('Email Sent Thanks...Contact Us Again.');
-                }, (error) => {
-                  alert(error.text);
-                });
+              let formData = new FormData(form.current);
+              if (formData.get('from_name') != '' && formData.get('from_email') != '' && formData.get('message') != '') {
+                emailjs.sendForm('service_l50fkhm', 'template_sjns88d', form.current, 'cp5NWKgyk7fyHhUO_')
+                  .then((result) => {
+                    alert('Email Sent Thanks...Contact Us Again.');
+                  }, (error) => {
+                    alert(error.text);
+                  });
+              } else {
+                alert('You Should Enter all Fields...!')
+              }
             }}>Send</button>
           </form>
         </div>
