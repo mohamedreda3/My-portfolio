@@ -34,6 +34,8 @@ function About() {
               <Exprience title={'Web design'} width={'88%'} />
               <Exprience title={'PHP'} width={'65%'} />
               <Exprience title={'MYSQL'} width={'97%'} />
+              <Exprience title={'English'} width={'74%'} />
+              <Exprience title={'Computer hardware'} width={'80%'} />
             </div>
           </div>
           <div className='btns'>
