@@ -759,6 +759,8 @@ p.exp:before {
     text-align: center;
     word-break: break-all;
     transition: .5s ease-in-out;
+    margin: auto;
+
 }
 
 .service:hover .service-icon,
@@ -875,13 +877,14 @@ p.exp:before {
 }
 
 .contact {
-    /* width: 800px; */
-    /* margin: 10px auto; */
+    width: 800px;
+    margin: 10px auto;
     display: flex;
     height: 60vh;
     flex-direction: column;
     /* overflow-x: hidden; */
     flex-wrap: wrap;
+    /* margin: auto; */
 }
 
 .contact__forms,
