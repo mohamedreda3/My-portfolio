@@ -1,6 +1,8 @@
 import React from 'react'
 import Exprience from '../components/exprience'
 import CalendarTodayIcon from '@material-ui/icons/CalendarToday';
+import { Link } from 'react-router-dom';
+import MyPDF from '../assets/files/MyResume.pdf';
 function About() {
   return (
     <section className='about_component container' id='home'>
@@ -35,7 +37,7 @@ function About() {
             </div>
           </div>
           <div className='btns'>
-            <a href={'../assets/files/MyResume.pdf'} download>Download CV</a>
+            <a href={MyPDF} download target="_blank">Download CV</a>
             <button onClick={(e) => window.location.href = 'mailto:mmoh33650@gmail.com'}>Hire me</button>
           </div>
           <div className='bottom'>
