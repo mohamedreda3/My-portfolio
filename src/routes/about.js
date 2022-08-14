@@ -3,10 +3,19 @@ import Exprience from '../components/exprience'
 import CalendarTodayIcon from '@material-ui/icons/CalendarToday';
 import { Link } from 'react-router-dom';
 import MyPDF from '../assets/files/MyResume.pdf';
+import { Adsense } from '@ctrl/react-adsense';
+
 function About() {
   return (
     <section className='about_component container' id='home'>
       {/* com for component */}
+      <Adsense
+        client="ca-pub-3206723439319150"
+        slot="4504404293"
+        style={{ display: 'block' }}
+        layout="in-article"
+        format="fluid"
+      />
       <h1 className='com_title'>About</h1>
       <div className='about_head'>
         <h3> My name is, <span>Mohamed Reda</span>,and I'm a <span>web developer</span>. </h3>

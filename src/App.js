@@ -12,6 +12,8 @@ import Services from './routes/services';
 import About from './routes/about';
 import Portfolio from './routes/portfolio';
 import Contact from './routes/contact';
+import {Adsense} from '@ctrl/react-adsense';
+
 export const theme = createContext();
 
 function App() {

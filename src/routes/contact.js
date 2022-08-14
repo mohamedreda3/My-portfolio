@@ -22,7 +22,7 @@ function Contact() {
         <div className='contact__forms'>
           <form ref={form}>
             <input type={'text'} placeholder='Your-Name' name={'from_name'} required />
-            <input type={'email'} placeholder='Your-Email' name={'from_email'} required />
+            <input type={'email'} placeholder='Your-Email' name='from_email' required />
             <textarea placeholder='Your-Message' name='message'></textarea>
             <button type="submit" onClick={(e) => {
               e.preventDefault();
