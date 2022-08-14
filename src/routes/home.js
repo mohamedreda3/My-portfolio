@@ -6,7 +6,7 @@ import MailIcon from '@material-ui/icons/Mail';
 
 let strings = ['Web developer', 'Web designer', 'Front-end developer', 'Back-end developer', 'Good at pure js', 'Good at deal with api', 'Make restful api', 'Design database', 'Develop database', 'Good at manage database', 'Good at convert PSD to HTML'];
 let nextString = 0;
-let nextChar = 0;
+let nextChar = -1;
 
 function Home() {
   const [typed, setTyped] = useState('');
