@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react'
-import me from '../assets/images/me.jpg'
+//import me from '../assets/images/me.jpg'
 import LinkedInIcon from '@material-ui/icons/LinkedIn';
 import GitHubIcon from '@material-ui/icons/GitHub';
 import MailIcon from '@material-ui/icons/Mail';
@@ -47,7 +47,7 @@ function Home() {
           <button onClick={() => window.location.href = 'mailto:mmoh33650@gmail.com'}>Hire me</button>
         </div>
         <div className='logo'>
-          <img src={me} />
+          <img src='https://telegra.ph/file/50108e2b724b66aa722b1.jpg' />
         </div>
       </div>
     </section>
