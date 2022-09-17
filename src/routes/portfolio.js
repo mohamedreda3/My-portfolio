@@ -14,7 +14,7 @@ function Portfolio() {
         <Template background={is} templateName={'Islamic'} link={'https://sparkling-scone-e14e48.netlify.app/'} />
         <Template background={rs} templateName={'Resto'} link={'https://ubiquitous-genie-5f3b91.netlify.app/'} />
         <Template background={mp} templateName={'Mp3-player-from-api'} link={'https://github.com/mohamedreda3/mp3-player-staggered-animation-and-voice-search-in-react.js'} />
-        <Template background={qa} templateName={'Full-quiz-app-and-accounts'} link={'https://github.com/mohamedreda3/Full-Stack-Quiz-App'} />
+        <Template background={qa} templateName={'Full-quiz-app-and-accounts'} link={'https://github.com/mohamedreda3/https---github.com-mohamedreda3-Full-Stack-Quiz-App'} />
         <Template background={op} templateName={'Other-Projects'} link={'https://github.com/mohamedreda3/'} />
       </div>
     </section>
